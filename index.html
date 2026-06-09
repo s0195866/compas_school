@@ -102,7 +102,6 @@
             align-items: center;
             flex-wrap: wrap;
         }
-        /* ЛОГОТИП ТОЧНО КАК НА ФОТО */
         .logo-area {
             display: flex;
             flex-direction: column;
@@ -193,37 +192,6 @@
             width: 100%;
             height: auto;
             display: block;
-        }
-        .subjects-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .subject-card {
-            background: white;
-            border-radius: 28px;
-            padding: 30px 20px;
-            text-align: center;
-            flex: 1;
-            min-width: 220px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-            transition: 0.25s;
-            border: 1px solid #eef2f6;
-        }
-        .subject-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 18px 30px rgba(0,0,0,0.08);
-        }
-        .subject-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: #2a9d8f;
-        }
-        .subject-card h3 {
-            font-size: 1.7rem;
-            margin-bottom: 12px;
         }
         .package-card {
             background: white;
@@ -388,20 +356,18 @@
         <div class="nav-links">
             <a href="#about">О школе</a>
             <a href="#courses">Предметы</a>
-            <a href="#package">Пакет "МИНИ"</a>
             <a href="#benefits">Преимущества</a>
             <a href="#contact" class="btn-outline" style="padding: 6px 18px; font-size: 0.9rem;">Пробный урок</a>
         </div>
     </div>
 </nav>
 
-<!-- Hero секция с логотипом как на фото (можно использовать тот же стиль) -->
 <section class="hero">
     <div class="container hero-grid">
         <div class="hero-content">
             <div class="hero-badge"><i class="fas fa-chalkboard-user"></i> Онлайн-школа №1 доверия</div>
             <h1>твой ориентир <span class="hero-highlight">в мире образования</span></h1>
-            <p class="hero-desc">Мы помогаем школьникам уверенно ориентироваться в мире знаний и достигать учебных целей. Понятные объяснения, индивидуальный подход и реальный результат.</p>
+            <p class="hero-desc">Мы помогаем школьникам уверенно ориентироваться в мире знаний и достигать своих учебных целей. Понятные объяснения, индивидуальный подход и реальный результат.</p>
             <div class="hero-stats">
                 <div class="stat"><strong>200+</strong><br> учеников</div>
                 <div class="stat"><strong>98%</strong><br> повышают успеваемость</div>
@@ -412,13 +378,11 @@
             </div>
         </div>
         <div class="hero-image-card">
-            <!-- Логотип как на фото compas_logo.png (отображаем также) -->
             <img src="compas_logo.png" alt="Компас - твой ориентир в мире образования" style="width:100%; display:block;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23ffffff\'/%3E%3Ctext x=\'400\' y=\'260\' font-family=\'Inter, sans-serif\' font-size=\'58\' font-weight=\'800\' fill=\'%232a6d5e\' text-anchor=\'middle\'%3EКомпас%3C/text%3E%3Ctext x=\'400\' y=\'330\' font-family=\'Inter, sans-serif\' font-size=\'22\' fill=\'%235a7b9c\' text-anchor=\'middle\'%3Eкомпас — твой ориентир в мире образования%3C/text%3E%3C/svg%3E'">
         </div>
     </div>
 </section>
 
-<!-- ОСТАЛЬНЫЕ СЕКЦИИ: добро пожаловать, пакет мини, преимущества, контакты (полностью рабочие) -->
 <section id="about" class="section">
     <div class="container">
         <h2 class="section-title">Добро пожаловать в онлайн-школу <span style="color:#2a9d8f;">Компас</span></h2>
@@ -441,12 +405,12 @@
             <div class="benefit-item"><i class="fas fa-file-alt"></i><h4>Подготовка к ОГЭ и ЕГЭ</h4><p>Системная работа, практика, пробники</p></div>
             <div class="benefit-item"><i class="fas fa-globe"></i><h4>Онлайн-формат</h4><p>Занимайтесь из любой точки мира</p></div>
             <div class="benefit-item"><i class="fas fa-heart"></i><h4>Поддержка и комфорт</h4><p>Дружелюбная атмосфера на уроках</p></div>
-            <div class="benefit-item"><i class="fas fa-check-circle"></i><h4>Подготовка к ВПР, контрольным</h4><p>Работа на результат без стресса</p></div>
+            <div class="benefit-item"><i class="fas fa-check-circle"></i><h4>Подготовка к ВПР, контр.</h4><p>Работа на результат без стресса</p></div>
         </div>
     </div>
 </section>
 
-<section id="package" class="section" style="background: #fefaf5;">
+<section id="courses" class="section" style="background: #fefaf5;">
     <div class="container">
         <h2 class="section-title">Специальный пакет “МИНИ”</h2>
         <div class="package-card">
@@ -500,11 +464,12 @@
             <p>Познакомимся, определим уровень, поставим цели. Пробный урок — бесплатно и без обязательств.</p>
             <p style="margin: 15px 0 5px; font-weight: 600;"><i class="fab fa-vk"></i> <i class="fab fa-telegram"></i> Напишите нам:</p>
             <div style="background: #f8f9fa; padding: 12px; border-radius: 60px; display: inline-flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
-                <span><i class="fab fa-telegram"></i> @alfredwqp</span>
-                <span><i class="fab fa-whatsapp"></i> +7 (989) 810-62-22</span>
+                <span><i class="fab fa-telegram"></i> @compass_edu</span>
+                <span><i class="fab fa-whatsapp"></i> +7 (999) 123-45-67</span>
             </div>
             <p style="margin-top: 30px;"><strong>Запись — в личных сообщениях сообщества или по кнопке ниже</strong></p>
-            <a href="#" class="btn-primary" style="margin-top: 20px; display: inline-flex;"><i class="fas fa-comment-dots"></i> Написать в сообщество</a>
+            <!-- ССЫЛКА VK ВСТАВЛЕНА ЗДЕСЬ -->
+            <a href="http://vk.com/im?sel=-239472626" target="_blank" class="btn-primary" style="margin-top: 20px; display: inline-flex;"><i class="fab fa-vk"></i> Написать в сообщество</a>
         </div>
     </div>
 </section>
